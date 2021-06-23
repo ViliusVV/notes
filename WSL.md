@@ -8,6 +8,9 @@ May require Windows Insider build from Dev stream eg. 21390
 ## Setup WSL
 
 ### Cache cleanup alias
+```
+sudo echo 'alias drop_cache="sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'\""' >> ~/.bashrc && source ~/.bashrc
+```
 
 ## Setup IDEs
 
